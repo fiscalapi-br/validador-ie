@@ -1,6 +1,8 @@
 # validador-ie — Inscrição Estadual das 27 UFs
 
-[![CI](https://github.com/fiscaIapi/validador-ie/actions/workflows/ci.yml/badge.svg)](https://github.com/fiscaIapi/validador-ie/actions/workflows/ci.yml)
+[![CI](https://github.com/fiscalapi-br/validador-ie/actions/workflows/ci.yml/badge.svg)](https://github.com/fiscalapi-br/validador-ie/actions/workflows/ci.yml)
+
+> Repositório oficial da [FiscalAPI](https://fiscalapi.com.br), mantido por nós e linkado no [nosso site](https://fiscalapi.com.br/validar-inscricao-estadual/). A organização no GitHub é `fiscalapi-br`; até outubro de 2026 ela se chamava `fiscaIapi`, e links antigos redirecionam para cá.
 
 Biblioteca gratuita e de código aberto (MIT) que confere se um número de **Inscrição Estadual (IE)**
 está bem formado: quantidade de dígitos, prefixo da UF quando existe e **dígito(s) verificador(es)**,

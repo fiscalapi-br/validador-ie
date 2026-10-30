@@ -3,7 +3,7 @@
 # python/pyproject.toml e do __version__. Configuração única no PyPI (o projeto
 # ainda não existe, então é um "pending publisher"): Account settings →
 # Publishing → Add a new pending publisher → GitHub: project "validador-ie",
-# owner "fiscaIapi", repo "validador-ie", workflow "publish-pypi.yml",
+# owner "fiscalapi-br", repo "validador-ie", workflow "publish-pypi.yml",
 # environment "pypi".
 name: Publish PyPI
 

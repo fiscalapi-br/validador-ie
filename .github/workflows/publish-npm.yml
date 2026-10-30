@@ -1,7 +1,7 @@
 # Publica o pacote JS/TS (pasta js/) no npm a cada tag js-vX.Y.Z, com proveniência.
 # A tag precisa bater com a versão do js/package.json.
 # Configuração no npmjs.com: pacote validador-ie → Settings → Trusted Publishers →
-# GitHub Actions: owner "fiscaIapi", repo "validador-ie", workflow "publish-npm.yml".
+# GitHub Actions: owner "fiscalapi-br", repo "validador-ie", workflow "publish-npm.yml".
 # Na primeira publicação o pacote ainda não existe no npm: use o secret NPM_TOKEN
 # uma vez e depois cadastre o Trusted Publisher.
 name: Publish npm

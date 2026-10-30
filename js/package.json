@@ -8,14 +8,14 @@
     "email": "contato@fiscalapi.com.br",
     "url": "https://fiscalapi.com.br"
   },
-  "homepage": "https://github.com/fiscaIapi/validador-ie#readme",
+  "homepage": "https://github.com/fiscalapi-br/validador-ie#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fiscaIapi/validador-ie.git",
+    "url": "git+https://github.com/fiscalapi-br/validador-ie.git",
     "directory": "js"
   },
   "bugs": {
-    "url": "https://github.com/fiscaIapi/validador-ie/issues"
+    "url": "https://github.com/fiscalapi-br/validador-ie/issues"
   },
   "keywords": [
     "inscricao-estadual",

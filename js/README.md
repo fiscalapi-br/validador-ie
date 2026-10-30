@@ -23,6 +23,6 @@ validarIE('0623079040082', 'MG');
 A biblioteca confere **apenas o formato**: não diz se a IE existe, está ativa ou a quem pertence.
 Para a situação cadastral real, veja a [FiscalAPI](https://fiscalapi.com.br).
 
-Documentação completa, regras por UF e versão em Python: https://github.com/fiscaIapi/validador-ie
+Documentação completa, regras por UF e versão em Python: https://github.com/fiscalapi-br/validador-ie
 
 Licença MIT © FiscalAPI
