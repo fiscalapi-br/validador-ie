@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/fiscalapi-br/validador-ie/actions/workflows/ci.yml/badge.svg)](https://github.com/fiscalapi-br/validador-ie/actions/workflows/ci.yml)
 
-> Repositório oficial da [FiscalAPI](https://fiscalapi.com.br), mantido por nós e linkado no [nosso site](https://fiscalapi.com.br/validar-inscricao-estadual/). A organização no GitHub é `fiscalapi-br`; até outubro de 2026 ela se chamava `fiscaIapi`, e links antigos redirecionam para cá.
+> Repositório oficial da [FiscalAPI](https://fiscalapi.com.br), mantido por nós e linkado no [nosso site](https://fiscalapi.com.br/validar-inscricao-estadual/).
 
 Biblioteca gratuita e de código aberto (MIT) que confere se um número de **Inscrição Estadual (IE)**
 está bem formado: quantidade de dígitos, prefixo da UF quando existe e **dígito(s) verificador(es)**,
@@ -116,6 +116,9 @@ curl -H "X-API-Key: SUA_CHAVE" \
 Também é possível consultar pela própria IE (`ie=`) ou por CPF (`cpf=`). Parâmetros, formato da
 resposta e planos estão na documentação: https://docs.fiscalapi.com.br
 
+Conta que nunca assinou plano, com e-mail confirmado e sem recarga, tem 10 consultas grátis por mês
+de IE (um estado por vez) e CNPJ, no painel e pela API. Depois disso, é preciso plano ou saldo.
+
 Uma combinação comum: validar o formato localmente com esta biblioteca e só então consultar a API.
 
 ```ts
@@ -123,6 +126,13 @@ const r = validarIE(ie, uf);
 if (!r.valida) throw new Error(`IE inválida: ${r.motivo}`);
 // formato ok -> consultar a situação cadastral na API
 ```
+
+## Links
+
+- Documentação da API: [docs.fiscalapi.com.br](https://docs.fiscalapi.com.br)
+- Guias (Excel, Google Sheets, n8n, Make, Power Automate, Python, Node.js, PHP): [docs.fiscalapi.com.br/docs/guias](https://docs.fiscalapi.com.br/docs/guias)
+- Especificação OpenAPI: [docs.fiscalapi.com.br/openapi.json](https://docs.fiscalapi.com.br/openapi.json)
+- Para desenvolvedores: [fiscalapi.com.br/desenvolvedores](https://fiscalapi.com.br/desenvolvedores/)
 
 ## Regras implementadas
 
