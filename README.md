@@ -1,4 +1,4 @@
-# validador-ie — Inscrição Estadual das 27 UFs
+# validador-ie: validar Inscrição Estadual das 27 UFs
 
 [![CI](https://github.com/fiscalapi-br/validador-ie/actions/workflows/ci.yml/badge.svg)](https://github.com/fiscalapi-br/validador-ie/actions/workflows/ci.yml)
 
@@ -105,19 +105,20 @@ de clientes e fornecedores.
 
 ## Consulte a situação real na FiscalAPI
 
-Se você precisa saber se a IE está ativa e a quem pertence, a [FiscalAPI](https://fiscalapi.com.br)
-oferece uma API REST de consulta cadastral. Exemplo:
+Se você precisa saber se a IE está ativa e a quem pertence (o que o SINTEGRA mostra), a
+[FiscalAPI](https://fiscalapi.com.br) consulta a inscrição estadual nos 27 estados por API REST, em JSON. Exemplo:
 
 ```bash
 curl -H "X-API-Key: SUA_CHAVE" \
-  "https://api.fiscalapi.com.br/api/consultar?uf=SP&cnpj=00000000000000"
+  "https://api.fiscalapi.com.br/api/consultar?uf=SP&cnpj=68178106000113"
 ```
 
 Também é possível consultar pela própria IE (`ie=`) ou por CPF (`cpf=`). Parâmetros, formato da
-resposta e planos estão na documentação: https://docs.fiscalapi.com.br
+resposta e planos estão na documentação: https://docs.fiscalapi.com.br/docs/consulta-ie/consultar-ie
 
-Conta que nunca assinou plano, com e-mail confirmado e sem recarga, tem 10 consultas grátis por mês
-de IE (um estado por vez) e CNPJ, no painel e pela API. Depois disso, é preciso plano ou saldo.
+Pela API, toda consulta pede plano ou créditos extras, a partir de R$ 50 por mês. Conta que nunca
+assinou plano e confirmou o e-mail tem 10 consultas grátis por mês, só no painel
+([app.fiscalapi.com.br](https://app.fiscalapi.com.br)).
 
 Uma combinação comum: validar o formato localmente com esta biblioteca e só então consultar a API.
 
